@@ -17,25 +17,26 @@ This project demonstrates an end-to-end fraud analytics pipeline built using **P
 
 ## 💰 Revenue by Category
 
-![Revenue by Category](images/revenue_by_category.png)
+![Revenue by Category](image/Revenue%20by%20Category.png)
 
 ---
 
 ## 🚨 Fraud Transactions by Category
 
-![Fraud by Category](images/fraud_by_category.png)
+![Fraud by Category](image/Fraud%20Transactions%20by%20Category.png)
 
 ---
 
 ## 📈 Monthly Revenue Trend
 
-![Monthly Revenue](images/monthly_revenue.png)
+![Monthly Revenue](image/Monthly%20Revenue.png)
 
 ---
 
 ## 📅 Weekend vs Weekday Transactions
 
-![Weekend vs Weekday](images/weekend_vs_weekday_transactions.png)
+![Weekend vs Weekday](image/Weekend%20vs%20Weekday%20Transactions.png)
+
 
 ---
 

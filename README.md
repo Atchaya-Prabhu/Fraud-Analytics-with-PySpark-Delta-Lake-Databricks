@@ -195,25 +195,25 @@ This project can help financial organizations:
 
 ## Revenue by Category
 
-![Revenue by Category](images/revenue_by_category.png)
+![Revenue by Category](image/revenue_by_category.png)
 
 ---
 
 ## Fraud Transactions by Category
 
-![Fraud by Category](images/fraud_by_category.png)
+![Fraud by Category](image/fraud_by_category.png)
 
 ---
 
 ## Monthly Revenue Trend
 
-![Monthly Revenue](images/monthly_revenue.png)
+![Monthly Revenue](image/monthly_revenue.png)
 
 ---
 
 ## Weekend vs Weekday Transactions
 
-![Weekend vs Weekday](images/weekend_weekday_transaction.png)
+![Weekend vs Weekday](image/weekend_weekday_transaction.png)
 
 ---
 

@@ -3,8 +3,6 @@
 # Project      : Credit Card Fraud Analytics Pipeline
 # Notebook     : 05_Analytics_Dashboard
 # Author       : Atchaya P
-# Environment  : Databricks Serverless
-# Description  : Business Analytics Dashboard using PySpark
 # ============================================================================
 
 from pyspark.sql.functions import *

@@ -1,30 +1,71 @@
-# Credit Card Fraud Analytics with PySpark & Databricks
+# 🚀 Credit Card Fraud Analytics with PySpark & Databricks
 
-## Project Overview
-
-This project demonstrates an end-to-end fraud analytics pipeline built using **PySpark** on **Databricks**. The goal is to transform raw credit card transaction data into business-ready insights by performing data ingestion, cleaning, feature engineering, analytical processing, and dashboard-ready reporting.
-
-The project follows a typical data engineering workflow and showcases how PySpark can efficiently process large-scale transaction datasets while generating insights for fraud monitoring and business decision-making.
-
----
-
-# Project Architecture
-
-Raw CSV Dataset
-        ↓
-Data Ingestion
-        ↓
-Data Cleaning
-        ↓
-Feature Engineering
-        ↓
-Business Analytics
-        ↓
-Dashboard Ready Tables
+![PySpark](https://img.shields.io/badge/PySpark-3.5-orange?style=for-the-badge)
+![Databricks](https://img.shields.io/badge/Databricks-Serverless-red?style=for-the-badge)
+![Spark SQL](https://img.shields.io/badge/Spark-SQL-yellow?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge)
 
 ---
 
-# Technologies Used
+# 📌 Project Overview
+
+This project demonstrates an end-to-end fraud analytics pipeline built using **PySpark** and **Databricks**. It transforms raw credit card transaction data into dashboard-ready datasets through scalable data processing, feature engineering, Spark SQL analytics, and business reporting.
+
+---
+
+# 📊 Dashboard Preview
+
+## 💰 Revenue by Category
+
+![Revenue by Category](images/revenue_by_category.png)
+
+---
+
+## 🚨 Fraud Transactions by Category
+
+![Fraud by Category](images/fraud_by_category.png)
+
+---
+
+## 📈 Monthly Revenue Trend
+
+![Monthly Revenue](images/monthly_revenue.png)
+
+---
+
+## 📅 Weekend vs Weekday Transactions
+
+![Weekend vs Weekday](images/weekend_vs_weekday_transactions.png)
+
+---
+
+# 🏗️ Project Architecture
+
+```text
+                 Kaggle Fraud Dataset
+                         │
+                         ▼
+              01_Data_Ingestion.py
+                         │
+                         ▼
+              02_Data_Cleaning.py
+                         │
+                         ▼
+           03_Feature_Engineering.py
+                         │
+                         ▼
+              04_Data_Analysis.py
+                         │
+                         ▼
+         05_Analytics_Dashboard.py
+                         │
+                         ▼
+        Dashboard Ready Business Tables
+```
+
+---
+
+# 🛠️ Technologies
 
 - PySpark
 - Databricks
@@ -32,25 +73,14 @@ Dashboard Ready Tables
 - Python
 - Window Functions
 - DataFrame API
-- Kaggle Dataset
 - GitHub
 
 ---
 
-# Dataset
+# 📂 Project Structure
 
-**Source**
-
-Credit Card Fraud Detection Dataset (Kaggle)
-
-The dataset contains historical credit card transactions, customer information, merchant details, locations, transaction timestamps, and fraud labels.
-
----
-
-# Project Structure
-
-```
-Fraud-Analytics-with-PySpark-Databricks/
+```text
+Fraud-Analytics-with-PySpark-Databricks
 
 │── 01_Data_Ingestion.py
 │── 02_Data_Cleaning.py
@@ -62,192 +92,43 @@ Fraud-Analytics-with-PySpark-Databricks/
 │── requirements.txt
 │
 └── images/
+    ├── revenue_by_category.png
+    ├── fraud_by_category.png
+    ├── monthly_revenue.png
+    └── weekend_vs_weekday_transactions.png
 ```
 
 ---
 
-# Notebook Description
+# 💼 Business Use Cases
 
-## 01 – Data Ingestion
-
-Purpose
-
-- Load CSV data into PySpark DataFrames
-- Infer schema
-- Inspect dataset
-- Validate data loading
-
-Why?
-
-Data ingestion is the first step of any ETL pipeline. It enables distributed processing of raw datasets using Spark.
+- Detect fraud patterns across transaction categories.
+- Monitor monthly revenue trends.
+- Compare weekday and weekend customer behaviour.
+- Analyze revenue performance by state.
+- Generate executive KPIs.
+- Prepare dashboard-ready datasets for BI tools.
 
 ---
 
-## 02 – Data Cleaning
+# 📌 Key Insights
 
-Purpose
-
-- Handle null values
-- Remove duplicates
-- Standardize data
-- Validate data quality
-
-Why?
-
-Clean data improves the reliability of downstream analytics and minimizes processing errors.
+- Grocery and shopping categories generated the highest transaction revenue.
+- Fraud activity varied across transaction categories.
+- Monthly revenue revealed seasonal spending trends.
+- Weekday transactions exceeded weekend transactions.
+- State-level analysis highlighted regional business performance.
 
 ---
 
-## 03 – Feature Engineering
+# 📝 Conclusion
 
-Purpose
-
-New analytical features were created including:
-
-- Customer Name
-- Transaction Date
-- Transaction Hour
-- Month Name
-- Weekend Flag
-
-Why?
-
-Feature engineering transforms raw attributes into business-friendly fields that simplify reporting and analysis.
+This project demonstrates how PySpark can be used to build a scalable fraud analytics pipeline on Databricks. The workflow includes data ingestion, cleaning, feature engineering, Spark SQL analysis, and dashboard-ready reporting, providing practical experience with data engineering concepts used in analytics projects.
 
 ---
 
-## 04 – Data Analysis
-
-Purpose
-
-Perform exploratory data analysis using PySpark DataFrame operations.
-
-Examples include:
-
-- Revenue Analysis
-- Fraud Analysis
-- State-wise Analysis
-- Category Analysis
-- Transaction Distribution
-
-Why?
-
-EDA helps identify trends, anomalies, and business patterns before dashboard development.
-
----
-
-## 05 – Analytics Dashboard
-
-Purpose
-
-Generate dashboard-ready analytical tables using PySpark.
-
-Includes
-
-- Executive KPIs
-- Revenue by Category
-- Fraud Rate by Category
-- Revenue by State
-- Monthly Revenue Trend
-- Monthly Fraud Trend
-- Weekend vs Weekday Analysis
-- Peak Transaction Hour
-- Spark SQL Analytics
-- Window Functions
-
-Why?
-
-Business users require summarized datasets instead of raw transactional data. This notebook prepares data for reporting tools such as Power BI or Databricks dashboards.
-
----
-
-# PySpark Concepts Demonstrated
-
-- DataFrame API
-- Aggregations
-- Filtering
-- Column Transformations
-- Window Functions
-- Spark SQL
-- GroupBy Operations
-- Date Functions
-- Conditional Logic
-- Business KPI Generation
-
----
-
-# Business Use Cases
-
-This project can help financial organizations:
-
-- Monitor fraudulent transaction patterns
-- Identify high-risk merchant categories
-- Analyze customer transaction behavior
-- Track monthly revenue trends
-- Compare weekday and weekend spending
-- Monitor regional revenue distribution
-- Support fraud investigation teams
-- Build executive dashboards for stakeholders
-
----
-
-# Dashboard Visualizations
-
-## Revenue by Category
-
-![Revenue by Category](image/revenue_by_category.png)
-
----
-
-## Fraud Transactions by Category
-
-![Fraud by Category](image/fraud_by_category.png)
-
----
-
-## Monthly Revenue Trend
-
-![Monthly Revenue](image/monthly_revenue.png)
-
----
-
-## Weekend vs Weekday Transactions
-
-![Weekend vs Weekday](image/weekend_weekday_transaction.png)
-
----
-
-# Key Insights
-
-- Grocery and shopping categories generate the highest transaction revenue.
-- Fraud activity varies across transaction categories.
-- Transaction volumes differ between weekdays and weekends.
-- Monthly revenue trends reveal seasonal changes in customer spending.
-- State-level analysis helps identify regional business performance.
-
----
-
-# Conclusion
-
-This project demonstrates how PySpark can be used to build scalable analytics pipelines on Databricks. By combining data ingestion, cleaning, feature engineering, Spark SQL, window functions, and business analytics, the solution transforms raw transaction data into meaningful insights that support fraud detection and business decision-making.
-
-The project also illustrates common data engineering practices for preparing analytical datasets that can be consumed by visualization tools such as Power BI or Databricks dashboards.
-
----
-
-# Future Enhancements
-
-- Delta Lake implementation
-- Incremental data loading
-- Streaming fraud detection
-- Machine Learning fraud prediction
-- Automated ETL pipelines
-- Azure Data Factory orchestration
-
----
-
-# Author
+# 👩‍💻 Author
 
 **Atchaya P**
 
-Data Analyst | Business Intelligence | Aspiring Data Engineer
+Data Analyst | Business Intelligence Developer | Aspiring Data Engineer

@@ -4,7 +4,6 @@
 # Notebook     : 02_Data_Cleaning_Silver
 # Layer        : Silver
 # Author       : Atchaya P
-# Environment  : Databricks Serverless
 # ============================================================================
 
 from pyspark.sql.functions import *
